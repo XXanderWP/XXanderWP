@@ -1,5 +1,5 @@
 # 💫 About Me:
-### <img src="https://cdn.discordapp.com/icons/336710648224546816/e78657a766edb010bfcbc024ad73d5ed.png" width="20px" /> [Awesome World](https://awesome-gta.online/)
+### <img src="https://cdn.discordapp.com/icons/336710648224546816/e78657a766edb010bfcbc024ad73d5ed.png" width="20px" /> [Awesome World](https://discord.gg/gbwDMUJ2H8)
 🤝 Main developer | Co-Owner
 
 ### <img src="https://rocketman-streams.com/LogoWhite.svg" width="20px" /> [RocketMan](https://rocketman-streams.com/)
