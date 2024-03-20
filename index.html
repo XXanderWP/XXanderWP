@@ -1,765 +1,2196 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>XanderWP</title>
-    <meta name="description" content="XanderWP - персональная страница" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://0.gravatar.com/avatar/85037e02666443f2f0e355ac304c7652?size=64"
-    />
+<html lang="en">
+	<head>
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="https://i.imgur.com/laVNfra.png"
+		/>
+		<title>XanderWP developer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="color-scheme" content="light only" />
+		<meta name="description" content="Developer webpage" />
+		<meta property="og:site_name" content="XanderWP" />
+		<meta property="og:title" content="XanderWP website" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Developer webpage" />
+		<meta property="og:image" content="https://i.imgur.com/pWpVPjQ.png" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:image:width" content="1280" />
+		<meta property="og:image:height" content="800" />
+		<meta property="og:url" content="https://xanderwp.site" />
+		<link rel="canonical" href="https://xanderwp.site" />
+		<link
+			href="https://fonts.googleapis.com/css2?display=swap&family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:ital,wght@0,400;0,700;1,400;1,700"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<style>
+			html,
+			body,
+			div,
+			span,
+			applet,
+			object,
+			iframe,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			blockquote,
+			pre,
+			a,
+			abbr,
+			acronym,
+			address,
+			big,
+			cite,
+			code,
+			del,
+			dfn,
+			em,
+			img,
+			ins,
+			kbd,
+			q,
+			s,
+			samp,
+			small,
+			strike,
+			strong,
+			sub,
+			sup,
+			tt,
+			var,
+			b,
+			u,
+			i,
+			center,
+			dl,
+			dt,
+			dd,
+			ol,
+			ul,
+			li,
+			fieldset,
+			form,
+			label,
+			legend,
+			table,
+			caption,
+			tbody,
+			tfoot,
+			thead,
+			tr,
+			th,
+			td,
+			article,
+			aside,
+			canvas,
+			details,
+			embed,
+			figure,
+			figcaption,
+			footer,
+			header,
+			hgroup,
+			menu,
+			nav,
+			output,
+			ruby,
+			section,
+			summary,
+			time,
+			mark,
+			audio,
+			video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			article,
+			aside,
+			details,
+			figcaption,
+			figure,
+			footer,
+			header,
+			hgroup,
+			menu,
+			nav,
+			section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol,
+			ul {
+				list-style: none;
+			}
+			blockquote,
+			q {
+				quotes: none;
+			}
+			blockquote:before,
+			blockquote:after,
+			q:before,
+			q:after {
+				content: "";
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			body {
+				-webkit-text-size-adjust: none;
+			}
+			mark {
+				background-color: transparent;
+				color: inherit;
+			}
+			input::-moz-focus-inner {
+				border: 0;
+				padding: 0;
+			}
+			input[type="text"],
+			input[type="email"],
+			select,
+			textarea {
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				-ms-appearance: none;
+				appearance: none;
+			}
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+			body {
+				line-height: 1;
+				min-height: var(--viewport-height);
+				min-width: 320px;
+				overflow-x: hidden;
+				word-wrap: break-word;
+			}
+			body:before {
+				background-attachment: scroll;
+				content: "";
+				display: block;
+				height: var(--background-height);
+				left: 0;
+				pointer-events: none;
+				position: fixed;
+				top: 0;
+				transform: scale(1);
+				width: 100vw;
+				z-index: 0;
+				background-image: linear-gradient(147deg, #453c3a 0%, #211a14 100%);
+				background-position: 0% 0%;
+				background-repeat: repeat;
+				background-size: auto;
+			}
+			body:after {
+				background-color: #9c8593;
+				content: "";
+				display: block;
+				height: 100%;
+				left: 0;
+				opacity: 0;
+				pointer-events: none;
+				position: fixed;
+				top: 0;
+				transform: scale(1);
+				transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+				visibility: hidden;
+				width: 100%;
+				z-index: 1;
+			}
+			body.is-loading:after {
+				opacity: 1;
+				visibility: visible;
+			}
+			:root {
+				--background-height: 100vh;
+				--site-language-alignment: left;
+				--site-language-direction: ltr;
+				--site-language-flex-alignment: flex-start;
+				--site-language-indent-left: 1;
+				--site-language-indent-right: 0;
+				--viewport-height: 100vh;
+			}
+			html {
+				font-size: 19pt;
+			}
+			u {
+				text-decoration: underline;
+			}
+			strong {
+				color: inherit;
+				font-weight: bolder;
+			}
+			em {
+				font-style: italic;
+			}
+			code {
+				background-color: rgba(144, 144, 144, 0.25);
+				border-radius: 0.25em;
+				font-family: "Lucida Console", "Courier New", monospace;
+				font-size: 0.9em;
+				font-weight: normal;
+				letter-spacing: 0;
+				margin: 0 0.25em;
+				padding: 0.25em 0.5em;
+				text-indent: 0;
+			}
+			mark {
+				background-color: rgba(144, 144, 144, 0.25);
+			}
+			spoiler-text {
+				-webkit-text-stroke: 0;
+				background-color: rgba(32, 32, 32, 0.75);
+				text-shadow: none;
+				text-stroke: 0;
+				color: transparent;
+				cursor: pointer;
+				transition: color 0.1s ease-in-out;
+			}
+			spoiler-text.active {
+				color: #ffffff;
+				cursor: text;
+			}
+			s {
+				text-decoration: line-through;
+			}
+			sub {
+				font-size: smaller;
+				vertical-align: sub;
+			}
+			sup {
+				font-size: smaller;
+				vertical-align: super;
+			}
+			a {
+				color: inherit;
+				text-decoration: underline;
+				transition: color 0.25s ease;
+			}
+			#wrapper {
+				-webkit-overflow-scrolling: touch;
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				min-height: var(--viewport-height);
+				overflow: hidden;
+				position: relative;
+				z-index: 2;
+			}
+			#main {
+				--alignment: center;
+				--flex-alignment: center;
+				--indent-left: 1;
+				--indent-right: 1;
+				--border-radius-tl: 0;
+				--border-radius-tr: 0;
+				--border-radius-br: 0;
+				--border-radius-bl: 0;
+				align-items: center;
+				display: flex;
+				flex-grow: 0;
+				flex-shrink: 0;
+				justify-content: center;
+				max-width: 100%;
+				position: relative;
+				text-align: var(--alignment);
+				z-index: 1;
+				transition: opacity 0.25s ease-in-out 0s;
+			}
+			#main > .inner {
+				--padding-horizontal: 3rem;
+				--padding-vertical: 3rem;
+				--spacing: 0.875rem;
+				--width: 64rem;
+				border-radius: var(--border-radius-tl) var(--border-radius-tr)
+					var(--border-radius-br) var(--border-radius-bl);
+				max-width: 100%;
+				position: relative;
+				width: var(--width);
+				z-index: 1;
+				padding: var(--padding-vertical) var(--padding-horizontal);
+			}
+			#main > .inner > * {
+				margin-top: var(--spacing);
+				margin-bottom: var(--spacing);
+			}
+			#main > .inner > :first-child {
+				margin-top: 0 !important;
+			}
+			#main > .inner > :last-child {
+				margin-bottom: 0 !important;
+			}
+			#main > .inner > .full {
+				margin-left: calc(var(--padding-horizontal) * -1);
+				max-width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+				width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+			}
+			#main > .inner > .full:first-child {
+				border-top-left-radius: inherit;
+				border-top-right-radius: inherit;
+				margin-top: calc(var(--padding-vertical) * -1) !important;
+			}
+			#main > .inner > .full:last-child {
+				border-bottom-left-radius: inherit;
+				border-bottom-right-radius: inherit;
+				margin-bottom: calc(var(--padding-vertical) * -1) !important;
+			}
+			#main > .inner > .full.screen {
+				border-radius: 0 !important;
+				max-width: 100vw;
+				position: relative;
+				width: 100vw;
+				left: 50%;
+				margin-left: -50vw;
+				right: auto;
+			}
+			body.is-loading #main {
+				opacity: 0;
+			}
+			body.is-instant #main,
+			body.is-instant #main > .inner > *,
+			body.is-instant #main > .inner > section > * {
+				transition: none !important;
+			}
+			body.is-instant:after {
+				display: none !important;
+				transition: none !important;
+			}
+			.container {
+				position: relative;
+			}
+			.container > .wrapper {
+				vertical-align: top;
+				position: relative;
+				max-width: 100%;
+				border-radius: inherit;
+			}
+			.container > .wrapper > .inner {
+				vertical-align: top;
+				position: relative;
+				max-width: 100%;
+				border-radius: inherit;
+				text-align: var(--alignment);
+			}
+			#main .container.full:first-child > .wrapper {
+				border-top-left-radius: inherit;
+				border-top-right-radius: inherit;
+			}
+			#main .container.full:last-child > .wrapper {
+				border-bottom-left-radius: inherit;
+				border-bottom-right-radius: inherit;
+			}
+			#main .container.full:first-child > .wrapper > .inner {
+				border-top-left-radius: inherit;
+				border-top-right-radius: inherit;
+			}
+			#main .container.full:last-child > .wrapper > .inner {
+				border-bottom-left-radius: inherit;
+				border-bottom-right-radius: inherit;
+			}
+			#container01 {
+				--alignment: left;
+				--flex-alignment: flex-start;
+				--indent-left: 1;
+				--indent-right: 0;
+				display: flex;
+				width: 100%;
+				align-items: center;
+				justify-content: center;
+				background-color: transparent;
+			}
+			#container01 > .wrapper > .inner {
+				--gutters: 3rem;
+				--padding-horizontal: 0rem;
+				--padding-vertical: 0rem;
+				padding: var(--padding-vertical) var(--padding-horizontal);
+			}
+			#container01 > .wrapper {
+				max-width: var(--width);
+				width: 100%;
+			}
+			#container01.default > .wrapper > .inner > * {
+				margin-bottom: var(--spacing);
+				margin-top: var(--spacing);
+			}
+			#container01.default > .wrapper > .inner > *:first-child {
+				margin-top: 0 !important;
+			}
+			#container01.default > .wrapper > .inner > *:last-child {
+				margin-bottom: 0 !important;
+			}
+			#container01.columns > .wrapper > .inner {
+				flex-wrap: wrap;
+				display: flex;
+				align-items: center;
+			}
+			#container01.columns > .wrapper > .inner > * {
+				flex-grow: 0;
+				flex-shrink: 0;
+				max-width: 100%;
+				text-align: var(--alignment);
+				padding: 0 0 0 var(--gutters);
+			}
+			#container01.columns > .wrapper > .inner > * > * {
+				margin-bottom: var(--spacing);
+				margin-top: var(--spacing);
+			}
+			#container01.columns > .wrapper > .inner > * > *:first-child {
+				margin-top: 0 !important;
+			}
+			#container01.columns > .wrapper > .inner > * > *:last-child {
+				margin-bottom: 0 !important;
+			}
+			#container01.columns > .wrapper > .inner > *:first-child {
+				margin-left: calc(var(--gutters) * -1);
+			}
+			#container01.default > .wrapper > .inner > .full {
+				margin-left: calc(var(--padding-horizontal) * -1);
+				max-width: none !important;
+				width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+			}
+			#container01.default > .wrapper > .inner > .full:first-child {
+				margin-top: calc(var(--padding-vertical) * -1) !important;
+				border-top-left-radius: inherit;
+				border-top-right-radius: inherit;
+			}
+			#container01.default > .wrapper > .inner > .full:last-child {
+				margin-bottom: calc(var(--padding-vertical) * -1) !important;
+				border-bottom-left-radius: inherit;
+				border-bottom-right-radius: inherit;
+			}
+			#container01.columns > .wrapper > .inner > div > .full {
+				margin-left: calc(var(--gutters) * -0.5);
+				max-width: none !important;
+				width: calc(100% + var(--gutters) + 0.4725px);
+			}
+			#container01.columns > .wrapper > .inner > div:first-child > .full {
+				margin-left: calc(var(--padding-horizontal) * -1);
+				width: calc(
+					100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+						0.4725px
+				);
+			}
+			#container01.columns > .wrapper > .inner > div:last-child > .full {
+				width: calc(
+					100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+						0.4725px
+				);
+			}
+			#container01.columns > .wrapper > .inner > div > .full:first-child {
+				margin-top: calc(var(--padding-vertical) * -1) !important;
+			}
+			#container01.columns > .wrapper > .inner > div > .full:last-child {
+				margin-bottom: calc(var(--padding-vertical) * -1) !important;
+			}
+			#container01.columns > .wrapper > .inner > .full {
+				align-self: stretch;
+			}
+			#container01.columns > .wrapper > .inner > .full:first-child {
+				border-bottom-left-radius: inherit;
+				border-top-left-radius: inherit;
+			}
+			#container01.columns > .wrapper > .inner > .full:last-child {
+				border-bottom-right-radius: inherit;
+				border-top-right-radius: inherit;
+			}
+			#container01.columns
+				> .wrapper
+				> .inner
+				> .full
+				> .full:first-child:last-child {
+				border-radius: inherit;
+				height: calc(100% + (var(--padding-vertical) * 2));
+			}
+			#container01.columns
+				> .wrapper
+				> .inner
+				> .full
+				> .full:first-child:last-child
+				> * {
+				border-radius: inherit;
+				height: 100%;
+				position: absolute;
+				width: 100%;
+			}
+			#container01 > .wrapper > .inner > :nth-child(1) {
+				width: calc(40% + (var(--gutters) / 2));
+			}
+			#container01 > .wrapper > .inner > :nth-child(2) {
+				width: calc(60% + (var(--gutters) / 2));
+			}
+			.image {
+				display: block;
+				line-height: 0;
+				max-width: 100%;
+				position: relative;
+			}
+			.image .frame {
+				-webkit-backface-visibility: hidden;
+				-webkit-transform: translate3d(0, 0, 0);
+				display: inline-block;
+				max-width: 100%;
+				overflow: hidden;
+				vertical-align: top;
+				width: 100%;
+			}
+			.image .frame img {
+				border-radius: 0 !important;
+				max-width: 100%;
+				vertical-align: top;
+				width: inherit;
+			}
+			.image.full .frame {
+				display: block;
+			}
+			.image.full:first-child .frame {
+				border-top-left-radius: inherit;
+				border-top-right-radius: inherit;
+			}
+			.image.full:last-child .frame {
+				border-bottom-left-radius: inherit;
+				border-bottom-right-radius: inherit;
+			}
+			#image01 .frame {
+				width: 100vw;
+				border-radius: 100%;
+				border-color: rgba(220, 206, 193, 0.322);
+				border-style: dashed;
+				border-width: 2px;
+				transition: none;
+			}
+			#image01 img {
+				border-radius: inherit !important;
+				padding: 0.875rem;
+			}
+			#image01 .frame img {
+				transition: none;
+			}
+			h1,
+			h2,
+			h3,
+			p {
+				direction: var(--site-language-direction);
+				position: relative;
+			}
+			h1 span.p,
+			h2 span.p,
+			h3 span.p,
+			p span.p {
+				display: block;
+				position: relative;
+			}
+			h1 span[style],
+			h2 span[style],
+			h3 span[style],
+			p span[style],
+			h1 strong,
+			h2 strong,
+			h3 strong,
+			p strong,
+			h1 a,
+			h2 a,
+			h3 a,
+			p a,
+			h1 code,
+			h2 code,
+			h3 code,
+			p code,
+			h1 mark,
+			h2 mark,
+			h3 mark,
+			p mark,
+			h1 spoiler-text,
+			h2 spoiler-text,
+			h3 spoiler-text,
+			p spoiler-text {
+				-webkit-text-fill-color: currentcolor;
+			}
+			#text02 {
+				color: #ffd600;
+				font-family: "Ibarra Real Nova", serif;
+				letter-spacing: 0.05rem;
+				width: calc(100% + 0.05rem);
+				font-size: 3.5em;
+				line-height: 1.125;
+				font-weight: 400;
+			}
+			#text02 a {
+				text-decoration: underline;
+			}
+			#text02 a:hover {
+				text-decoration: none;
+			}
+			#text02 span.p:nth-child(n + 2) {
+				margin-top: 1rem;
+			}
+			#text01 {
+				color: #b8a497;
+				font-family: "Ibarra Real Nova", serif;
+				text-indent: 0.25rem;
+				font-size: 1em;
+				line-height: 1.5;
+				font-weight: 400;
+			}
+			#text01 a {
+				text-decoration: underline;
+			}
+			#text01 a:hover {
+				text-decoration: none;
+			}
+			#text01 span.p:nth-child(n + 2) {
+				margin-top: 1rem;
+			}
+			.buttons {
+				cursor: default;
+				display: flex;
+				justify-content: var(--flex-alignment);
+				letter-spacing: 0;
+				padding: 0;
+			}
+			.buttons li {
+				max-width: 100%;
+			}
+			.buttons li a {
+				align-items: center;
+				justify-content: center;
+				max-width: 100%;
+				text-align: center;
+				text-decoration: none;
+				vertical-align: middle;
+				white-space: nowrap;
+			}
+			#buttons01 {
+				gap: 1.125rem;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			#buttons01:not(:first-child) {
+				margin-top: 2.5rem !important;
+			}
+			#buttons01:not(:last-child) {
+				margin-bottom: 2.5rem !important;
+			}
+			#buttons01 li a {
+				display: inline-flex;
+				width: 16rem;
+				height: 3.25rem;
+				line-height: 3.25rem;
+				padding: 0 1.625rem;
+				vertical-align: middle;
+				font-family: "Fredoka", sans-serif;
+				letter-spacing: 0.025rem;
+				padding-left: calc(0.025rem + 1.625rem);
+				font-size: 1.125em;
+				font-weight: 400;
+				border-radius: 2.5rem;
+				flex-direction: row-reverse;
+				justify-content: flex-end;
+				transition: transform 0.25s ease, color 0.25s ease,
+					background-color 0.25s ease, border-color 0.25s ease;
+			}
+			#buttons01 li a svg {
+				display: block;
+				fill: #e2d6cb;
+				flex-grow: 0;
+				flex-shrink: 0;
+				height: 100%;
+				min-width: 16px;
+				width: 1.25em;
+				margin-left: 0.5em;
+				margin-right: calc(-0.125em + 0.025rem);
+				transition: fill 0.25s ease;
+			}
+			#buttons01 li a .label {
+				direction: var(--site-language-direction);
+				overflow: hidden;
+				flex-grow: 1;
+				flex-shrink: 1;
+				text-align: left;
+				width: 100%;
+			}
+			#buttons01 .button {
+				color: #e2d6cb;
+				border: solid 2px rgba(220, 206, 193, 0.102);
+			}
+			#buttons01 .button svg {
+				fill: #e2d6cb;
+			}
+			#buttons01 .button:hover {
+				border-color: #ffd600 !important;
+				color: #ffd600 !important;
+			}
+			#buttons01 .button:hover svg {
+				fill: #ffd600 !important;
+			}
+			#buttons01 li a:hover {
+				transform: scale(1.0775);
+			}
+			@media (max-width: 1920px) {
+			}
+			@media (max-width: 1680px) {
+				html {
+					font-size: 14pt;
+				}
+			}
+			@media (max-width: 1280px) {
+				html {
+					font-size: 14pt;
+				}
+			}
+			@media (max-width: 1024px) {
+			}
+			@media (max-width: 980px) {
+				html {
+					font-size: 12pt;
+				}
+			}
+			@media (max-width: 736px) {
+				html {
+					font-size: 14pt;
+				}
+				#main > .inner {
+					--padding-horizontal: 2rem;
+					--padding-vertical: 3rem;
+					--spacing: 0.875rem;
+				}
+				#container01 {
+					--alignment: center;
+					--flex-alignment: center;
+					--indent-left: 1;
+					--indent-right: 1;
+				}
+				#container01 > .wrapper > .inner {
+					--gutters: 1.25rem;
+					--padding-horizontal: 0rem;
+					--padding-vertical: 0rem;
+				}
+				#container01.columns > .wrapper > .inner {
+					flex-direction: column !important;
+					flex-wrap: nowrap !important;
+				}
+				#container01.columns > .wrapper > .inner > span {
+					height: 0;
+					margin-top: calc(var(--gutters) * -1);
+					pointer-events: none;
+					visibility: hidden;
+				}
+				#container01.columns > .wrapper > .inner > *:first-child {
+					margin-left: 0 !important;
+					padding-top: 0 !important;
+				}
+				#container01.columns > .wrapper > .inner > * {
+					padding: calc(var(--gutters) * 0.5) 0 !important;
+				}
+				#container01.columns > .wrapper > .inner > *:last-child {
+					padding-bottom: 0 !important;
+				}
+				#container01.columns > .wrapper > .inner > div > .full {
+					margin-left: calc(var(--padding-horizontal) * -1);
+					width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+				}
+				#container01.columns > .wrapper > .inner > div:first-of-type > .full {
+					margin-left: calc(var(--padding-horizontal) * -1);
+					width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+				}
+				#container01.columns > .wrapper > .inner > div:last-of-type > .full {
+					margin-left: calc(var(--padding-horizontal) * -1);
+					width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+				}
+				#container01.columns > .wrapper > .inner > div > .full:first-child {
+					margin-top: calc(var(--gutters) * -0.5) !important;
+				}
+				#container01.columns > .wrapper > .inner > div > .full:last-child {
+					margin-bottom: calc(var(--gutters) * -0.5) !important;
+				}
+				#container01.columns
+					> .wrapper
+					> .inner
+					> div:first-of-type
+					> .full:first-child {
+					margin-top: calc(var(--padding-vertical) * -1) !important;
+				}
+				#container01.columns
+					> .wrapper
+					> .inner
+					> div:last-of-type
+					> .full:last-child {
+					margin-bottom: calc(var(--padding-vertical) * -1) !important;
+				}
+				#container01.columns > .wrapper > .inner > div:first-of-type,
+				#container01.columns
+					> .wrapper
+					> .inner
+					> div:first-of-type
+					> .full:first-child {
+					border-top-left-radius: inherit;
+					border-top-right-radius: inherit;
+				}
+				#container01.columns > .wrapper > .inner > div:last-of-type,
+				#container01.columns
+					> .wrapper
+					> .inner
+					> div:last-of-type
+					> .full:last-child {
+					border-bottom-left-radius: inherit;
+					border-bottom-right-radius: inherit;
+				}
+				#container01.columns > .wrapper > .inner > div:first-of-type,
+				#container01.columns
+					> .wrapper
+					> .inner
+					> div:first-of-type
+					> .full:last-child {
+					border-bottom-left-radius: 0 !important;
+				}
+				#container01.columns > .wrapper > .inner > div:last-of-type,
+				#container01.columns
+					> .wrapper
+					> .inner
+					> div:last-of-type
+					> .full:first-child {
+					border-top-right-radius: 0 !important;
+				}
+				#container01.columns
+					> .wrapper
+					> .inner
+					> .full
+					> .full:first-child:last-child {
+					height: auto;
+				}
+				#container01.columns
+					> .wrapper
+					> .inner
+					> .full
+					> .full:first-child:last-child
+					> * {
+					height: auto;
+					position: relative;
+					width: auto;
+				}
+				#container01 > .wrapper > .inner > :nth-child(1) {
+					--alignment: center;
+					--flex-alignment: center;
+					--indent-left: 1;
+					--indent-right: 1;
+					min-height: 100% !important;
+					width: 100% !important;
+				}
+				#container01 > .wrapper > .inner > :nth-child(2) {
+					--alignment: center;
+					--flex-alignment: center;
+					--indent-left: 1;
+					--indent-right: 1;
+					min-height: 100% !important;
+					width: 100% !important;
+				}
+				#image01 .frame {
+					width: 12rem;
+				}
+				#text02 {
+					letter-spacing: 0.04375rem;
+					width: calc(100% + 0.04375rem);
+					font-size: 3em;
+					line-height: 1.125;
+				}
+				#text01 {
+					text-indent: 0.1875rem;
+					letter-spacing: 0rem;
+					width: 100%;
+					font-size: 1em;
+					line-height: 1.5;
+				}
+				#buttons01 {
+					gap: 1.125rem;
+				}
+				#buttons01:not(:first-child) {
+					margin-top: 1.875rem !important;
+				}
+				#buttons01:not(:last-child) {
+					margin-bottom: 1.875rem !important;
+				}
+				#buttons01 li a {
+					letter-spacing: 0.025rem;
+					padding-left: calc(0.025rem + 1.625rem);
+					font-size: 1.125em;
+				}
+				#buttons01 li a svg {
+					width: 1.25em;
+				}
+			}
+			@media (max-width: 480px) {
+				#main > .inner {
+					--spacing: 0.765625rem;
+				}
+				#buttons01 {
+					flex-direction: column;
+					flex-wrap: nowrap;
+				}
+				#buttons01 li a {
+					max-width: 32rem;
+					width: 100%;
+				}
+			}
+			@media (max-width: 360px) {
+				#main > .inner {
+					--padding-horizontal: 1.5rem;
+					--padding-vertical: 2.25rem;
+					--spacing: 0.65625rem;
+				}
+				#container01 > .wrapper > .inner {
+					--gutters: 1.25rem;
+					--padding-horizontal: 0rem;
+					--padding-vertical: 0rem;
+				}
+				#text02 {
+					font-size: 3em;
+				}
+				#text01 {
+					font-size: 1em;
+				}
+				#buttons01 {
+					gap: 0.84375rem;
+				}
+			}
+		</style>
+		<noscript
+			><style>
+				body {
+					overflow: auto !important;
+				}
+				body:after {
+					display: none !important;
+				}
+				#main > .inner {
+					opacity: 1 !important;
+				}
+				#main {
+					opacity: 1 !important;
+					transform: none !important;
+					transition: none !important;
+					filter: none !important;
+				}
+			</style></noscript
+		>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<div id="container01" class="container columns">
+						<div class="wrapper">
+							<div class="inner">
+								<div>
+									<div id="image01" class="image">
+										<span class="frame"
+											><img src="https://i.imgur.com/laVNfra.png" alt=""
+										/></span>
+									</div>
+								</div>
+								<div>
+									<h2 id="text02"><strong>Just a developer</strong></h2>
+									<p id="text01">
+										🎮 Don't touch me unless you want to play Genshin with me.
+									</p>
+									<ul id="buttons01" class="buttons">
+										<li>
+											<a href="https://twitch.tv/xanderwp" class="button n01">
+												<span class="label"> Twitch </span>
+											</a>
+										</li>
+										<li>
+											<a href="https://t.me/xanderwp" class="button n01">
+												<span class="label"> Telegram </span>
+											</a>
+										</li>
+										<li>
+											<a
+												href="https://github.com/XXanderWP/"
+												class="button n01"
+											>
+												<span class="label"> GitHub </span>
+											</a>
+										</li>
+										<li>
+											<a
+												href="https://discordapp.com/users/260317827288924161"
+												class="button n01"
+											>
+												<span class="label"> Discord </span>
+											</a>
+										</li>
+										<li>
+											<a
+												href="https://xander-fivem.tebex.io/"
+												class="button n01"
+											>
+												<span class="label"> Tebex store </span>
+											</a>
+										</li>
+										<li>
+											<a
+												href="https://rocketman-streams.com/?r=1"
+												class="button n01"
+											>
+												<span class="label"> RocketMan-Streams </span>
+											</a>
+										</li>
 
-    <!-- STYLESHEETS -->
-    <link
-      rel="stylesheet"
-      href="themes/css/bootstrap.min.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="themes/css/all.min.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="themes/css/simple-line-icons.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="themes/css/slick.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="themes/css/animate.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="themes/css/magnific-popup.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="themes/css/style.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body class="dark">
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="outer">
-        <!-- Google Chrome -->
-        <div class="infinityChrome">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-
-        <!-- Safari and others -->
-        <div class="infinity">
-          <div>
-            <span></span>
-          </div>
-          <div>
-            <span></span>
-          </div>
-          <div>
-            <span></span>
-          </div>
-        </div>
-        <!-- Stuff -->
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="6"
-                result="blur"
-              />
-              <feColorMatrix
-                in="blur"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-    </div>
-
-    <!-- mobile header -->
-    <header class="mobile-header-1">
-      <div class="container">
-        <!-- menu icon -->
-        <div class="menu-icon d-inline-flex mr-4">
-          <button>
-            <span></span>
-          </button>
-        </div>
-        <!-- logo image -->
-        <!-- <div class="site-logo">
-          <a href="index-dark.html">
-            <img src="images/logo.svg" alt="Bolby" />
-          </a>
-        </div> -->
-      </div>
-    </header>
-
-    <!-- main layout -->
-    <main class="content">
-      <!-- section home -->
-      <section id="home" class="home d-flex align-items-center">
-        <div class="container">
-          <!-- intro -->
-          <div class="intro">
-            <!-- avatar image -->
-            <img
-              src="https://0.gravatar.com/avatar/85037e02666443f2f0e355ac304c7652?size=108"
-              alt="XanderWP"
-              class="mb-4"
-            />
-
-            <!-- info -->
-            <h1 class="mb-2 mt-0">XanderWP</h1>
-            <span
-              >Унылый
-              <span class="text-rotating"
-                >разработчик, кодер, проггер</span
-              ></span
-            >
-
-            <!-- social icons -->
-            <ul class="social-icons light list-inline mb-0 mt-4">
-              <li class="list-inline-item">
-                <a href="https://twitch.tv/xanderwp" target="_blank"
-                  ><i class="fab fa-twitch"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="mailto:user@xanderwp.site"
-                  ><i class="fas fa-envelope-open-text"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://t.me/xanderwp" target="_blank"
-                  ><i class="fab fa-telegram-plane"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://discordapp.com/users/260317827288924161" target="_blank"
-                  ><i class="fab fa-discord"></i></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/XXanderWP/" target="_blank"
-                  ><i class="fab fa-github"></i></i
-                ></a>
-              </li>
-              <!-- <li class="list-inline-item">
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-              </li> -->
-            </ul>
-
-            <!-- buttons -->
-            <!-- <div class="mt-4">
-              <a href="#contact" class="btn btn-default">Hire me</a>
-            </div> -->
-          </div>
-
-          <!-- scroll down mouse wheel -->
-          <!-- <div class="scroll-down">
-            <a href="#about" class="mouse-wrapper">
-              <span>Прокрутка</span>
-              <span class="mouse">
-                <span class="wheel"></span>
-              </span>
-            </a>
-          </div> -->
-
-          <!-- parallax layers -->
-          <div class="parallax" data-relative-input="true">
-            <svg
-              width="27"
-              height="29"
-              data-depth="0.3"
-              class="layer p1"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
-                fill="#FFD15C"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="26"
-              height="26"
-              data-depth="0.2"
-              class="layer p2"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z"
-                stroke="#FF4C60"
-                stroke-width="3"
-                fill="none"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="30"
-              height="25"
-              data-depth="0.3"
-              class="layer p3"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
-                fill="#44D7B6"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="15"
-              height="23"
-              data-depth="0.6"
-              class="layer p4"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                transform="rotate(30 9.86603 10.13397)"
-                x="7"
-                width="3"
-                height="25"
-                rx="1.5"
-                fill="#FFD15C"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="15"
-              height="23"
-              data-depth="0.2"
-              class="layer p5"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                transform="rotate(30 9.86603 10.13397)"
-                x="7"
-                width="3"
-                height="25"
-                rx="1.5"
-                fill="#6C6CE5"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="49"
-              height="17"
-              data-depth="0.5"
-              class="layer p6"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#FF4C60" fill-rule="evenodd">
-                <path
-                  d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"
-                />
-                <path
-                  d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"
-                />
-              </g>
-            </svg>
-
-            <svg
-              width="26"
-              height="26"
-              data-depth="0.4"
-              class="layer p7"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z"
-                stroke="#FFD15C"
-                stroke-width="3"
-                fill="none"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="19"
-              height="21"
-              data-depth="0.3"
-              class="layer p8"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                transform="rotate(-40 6.25252 10.12626)"
-                x="7"
-                width="3"
-                height="25"
-                rx="1.5"
-                fill="#6C6CE5"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="30"
-              height="25"
-              data-depth="0.3"
-              data-depth-y="-1.30"
-              class="layer p9"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
-                fill="#6C6CE5"
-                fill-rule="evenodd"
-              />
-            </svg>
-
-            <svg
-              width="47"
-              height="29"
-              data-depth="0.2"
-              class="layer p10"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#44D7B6" fill-rule="evenodd">
-                <path
-                  d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"
-                />
-                <path
-                  d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"
-                />
-              </g>
-            </svg>
-
-            <svg
-              width="33"
-              height="20"
-              data-depth="0.5"
-              class="layer p11"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
-                fill="#FFD15C"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
-
-      <!-- section about -->
-      <!-- <section id="about">
-        <div class="container">
-          <h2 class="section-title wow fadeInUp">About Me</h2>
-
-          <div class="spacer" data-height="60"></div>
-
-          <div class="row">
-            <div class="col-md-3">
-              <div class="text-center text-md-left">
-                <img src="images/avatar-2.svg" alt="Bolby" />
-              </div>
-              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-            </div>
-
-            <div class="col-md-9 triangle-left-md triangle-top-sm">
-              <div class="rounded bg-dark shadow-light padding-30">
-                <div class="row">
-                  <div class="col-md-6">
-                    <p>
-                      I am Bolby Doe, web developer from London, United Kingdom.
-                      I have rich experience in web site design and building and
-                      customization, also I am good at WordPress.
-                    </p>
-                    <div class="mt-3">
-                      <a href="#" class="btn btn-default">Download CV</a>
-                    </div>
-                    <div
-                      class="spacer d-md-none d-lg-none"
-                      data-height="30"
-                    ></div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="skill-item">
-                      <div class="skill-info clearfix">
-                        <h4 class="float-left mb-3 mt-0">Development</h4>
-                        <span class="float-right">85%</span>
-                      </div>
-                      <div class="progress">
-                        <div
-                          class="progress-bar data-background"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          aria-valuenow="85"
-                          data-color="#FFD15C"
-                        ></div>
-                      </div>
-                      <div class="spacer" data-height="20"></div>
-                    </div>
-
-                    <div class="skill-item">
-                      <div class="skill-info clearfix">
-                        <h4 class="float-left mb-3 mt-0">UI/UX design</h4>
-                        <span class="float-right">95%</span>
-                      </div>
-                      <div class="progress">
-                        <div
-                          class="progress-bar data-background"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          aria-valuenow="95"
-                          data-color="#FF4C60"
-                        ></div>
-                      </div>
-                      <div class="spacer" data-height="20"></div>
-                    </div>
-
-                    <div class="skill-item">
-                      <div class="skill-info clearfix">
-                        <h4 class="float-left mb-3 mt-0">Photography</h4>
-                        <span class="float-right">70%</span>
-                      </div>
-                      <div class="progress">
-                        <div
-                          class="progress-bar data-background"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          aria-valuenow="70"
-                          data-color="#6C6CE5"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="spacer" data-height="70"></div>
-
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="fact-item">
-                <span class="icon icon-fire"></span>
-                <div class="details">
-                  <h3 class="mb-0 mt-0 number">
-                    <em class="count">999999</em>
-                  </h3>
-                  <p class="mb-0">Проектов завершено</p>
-                </div>
-              </div>
-              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="fact-item">
-                <span class="icon icon-cup"></span>
-                <div class="details">
-                  <h3 class="mb-0 mt-0 number">
-                    <em class="count">9999999</em>
-                  </h3>
-                  <p class="mb-0">Энергетиков</p>
-                </div>
-              </div>
-              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-            </div> -->
-
-      <!-- <div class="col-md-3 col-sm-6">
-              <div class="fact-item">
-                <span class="icon icon-people"></span>
-                <div class="details">
-                  <h3 class="mb-0 mt-0 number"><em class="count">427</em></h3>
-                  <p class="mb-0">Satisfied clients</p>
-                </div>
-              </div>
-              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="fact-item">
-                <span class="icon icon-badge"></span>
-                <div class="details">
-                  <h3 class="mb-0 mt-0 number"><em class="count">35</em></h3>
-                  <p class="mb-0">Nominees winner</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- section services -->
-      <!-- <section id="services">
-        <div class="container">
-          <h2 class="section-title wow fadeInUp">Services</h2>
-
-          <div class="spacer" data-height="60"></div>
-
-          <div class="row">
-            <div class="col-md-4">
-              <div
-                class="
-                  service-box
-                  rounded
-                  data-background
-                  padding-30
-                  text-center text-light
-                  shadow-blue
-                "
-                data-color="#6C6CE5"
-              >
-                <img src="images/service-1.svg" alt="UI/UX design" />
-                <h3 class="mb-3 mt-0">UI/UX design</h3>
-                <p class="mb-0">
-                  Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                  commodo ligula eget.
-                </p>
-              </div>
-              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="
-                  service-box
-                  rounded
-                  data-background
-                  padding-30
-                  text-center
-                  shadow-yellow
-                "
-                data-color="#F9D74C"
-              >
-                <img src="images/service-2.svg" alt="UI/UX design" />
-                <h3 class="mb-3 mt-0">Web Development</h3>
-                <p class="mb-0">
-                  Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                  commodo ligula eget.
-                </p>
-              </div>
-              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="
-                  service-box
-                  rounded
-                  data-background
-                  padding-30
-                  text-center text-light
-                  shadow-pink
-                "
-                data-color="#F97B8B"
-              >
-                <img src="images/service-3.svg" alt="UI/UX design" />
-                <h3 class="mb-3 mt-0">Photography</h3>
-                <p class="mb-0">
-                  Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                  commodo ligula eget.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-5 text-center">
-            <p class="mb-0">
-              Looking for a custom job? <a href="#contact">Click here</a> to
-              contact me! 👋
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience">
-        <div class="container">
-          <h2 class="section-title wow fadeInUp">Experience</h2>
-
-          <div class="spacer" data-height="60"></div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div
-                class="
-                  timeline
-                  edu
-                  bg-dark
-                  rounded
-                  shadow-light
-                  padding-30
-                  overflow-hidden
-                "
-              >
-                <div class="timeline-container wow fadeInUp">
-                  <div class="content">
-                    <span class="time">2019 - Present</span>
-                    <h3 class="title">Academic Degree</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
-                      nec admodum perfecto.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="timeline-container wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  <div class="content">
-                    <span class="time">2017 - 2013</span>
-                    <h3 class="title">Bachelor’s Degree</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
-                      nec admodum perfecto.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="timeline-container wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div class="content">
-                    <span class="time">2013 - 2009</span>
-                    <h3 class="title">Honours Degree</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
-                      nec admodum perfecto.
-                    </p>
-                  </div>
-                </div>
-
-                <span class="line"></span>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-
-              <div
-                class="
-                  timeline
-                  exp
-                  bg-dark
-                  rounded
-                  shadow-light
-                  padding-30
-                  overflow-hidden
-                "
-              >
-                <div class="timeline-container wow fadeInUp">
-                  <div class="content">
-                    <span class="time">2019 - Present</span>
-                    <h3 class="title">Web Designer</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
-                      nec admodum perfecto.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="timeline-container wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  <div class="content">
-                    <span class="time">2017 - 2013</span>
-                    <h3 class="title">Front-End Developer</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
-                      nec admodum perfecto.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="timeline-container wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div class="content">
-                    <span class="time">2013 - 2009</span>
-                    <h3 class="title">Back-End Developer</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
-                      nec admodum perfecto.
-                    </p>
-                  </div>
-                </div>
-
-                <span class="line"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <div class="spacer" data-height="96"></div>
-    </main>
-
-    <!-- Go to top button -->
-    <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
-
-    <!-- SCRIPTS -->
-    <script src="themes/js/jquery-1.12.3.min.js"></script>
-    <script src="themes/js/jquery.easing.min.js"></script>
-    <script src="themes/js/jquery.waypoints.min.js"></script>
-    <script src="themes/js/jquery.counterup.min.js"></script>
-    <script src="themes/js/popper.min.js"></script>
-    <script src="themes/js/bootstrap.min.js"></script>
-    <script src="themes/js/isotope.pkgd.min.js"></script>
-    <script src="themes/js/infinite-scroll.min.js"></script>
-    <script src="themes/js/imagesloaded.pkgd.min.js"></script>
-    <script src="themes/js/slick.min.js"></script>
-    <script src="themes/js/contact.js"></script>
-    <script src="themes/js/validator.js"></script>
-    <script src="themes/js/wow.min.js"></script>
-    <script src="themes/js/morphext.min.js"></script>
-    <script src="themes/js/parallax.min.js"></script>
-    <script src="themes/js/jquery.magnific-popup.min.js"></script>
-    <script src="themes/js/custom.js"></script>
-<style>
-  .huww-widget {
-   color: black; 
-  }
-</style>
-<script id="help-ukraine-win" async="true" src="https://helpukrainewinwidget.org/cdn/widget.js" data-type="one" data-position="bottom-right"></script>
-  </body>
+										<li>
+											<a
+												href="https://enka.network/u/XanderWP"
+												class="button n01"
+											>
+												<span class="label"> Enka.Network </span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			(function () {
+				var on = addEventListener,
+					off = removeEventListener,
+					$ = function (q) {
+						return document.querySelector(q);
+					},
+					$$ = function (q) {
+						return document.querySelectorAll(q);
+					},
+					$body = document.body,
+					$inner = $(".inner"),
+					client = (function () {
+						var o = {
+								browser: "other",
+								browserVersion: 0,
+								os: "other",
+								osVersion: 0,
+								mobile: false,
+								canUse: null,
+								flags: { lsdUnits: false },
+							},
+							ua = navigator.userAgent,
+							a,
+							i;
+						a = [
+							["firefox", /Firefox\/([0-9\.]+)/],
+							["edge", /Edge\/([0-9\.]+)/],
+							["safari", /Version\/([0-9\.]+).+Safari/],
+							["chrome", /Chrome\/([0-9\.]+)/],
+							["chrome", /CriOS\/([0-9\.]+)/],
+							["ie", /Trident\/.+rv:([0-9]+)/],
+						];
+						for (i = 0; i < a.length; i++) {
+							if (ua.match(a[i][1])) {
+								o.browser = a[i][0];
+								o.browserVersion = parseFloat(RegExp.$1);
+								break;
+							}
+						}
+						a = [
+							[
+								"ios",
+								/([0-9_]+) like Mac OS X/,
+								function (v) {
+									return v.replace("_", ".").replace("_", "");
+								},
+							],
+							[
+								"ios",
+								/CPU like Mac OS X/,
+								function (v) {
+									return 0;
+								},
+							],
+							[
+								"ios",
+								/iPad; CPU/,
+								function (v) {
+									return 0;
+								},
+							],
+							["android", /Android ([0-9\.]+)/, null],
+							[
+								"mac",
+								/Macintosh.+Mac OS X ([0-9_]+)/,
+								function (v) {
+									return v.replace("_", ".").replace("_", "");
+								},
+							],
+							["windows", /Windows NT ([0-9\.]+)/, null],
+							["undefined", /Undefined/, null],
+						];
+						for (i = 0; i < a.length; i++) {
+							if (ua.match(a[i][1])) {
+								o.os = a[i][0];
+								o.osVersion = parseFloat(
+									a[i][2] ? a[i][2](RegExp.$1) : RegExp.$1
+								);
+								break;
+							}
+						}
+						if (
+							o.os == "mac" &&
+							"ontouchstart" in window &&
+							((screen.width == 1024 && screen.height == 1366) ||
+								(screen.width == 834 && screen.height == 1112) ||
+								(screen.width == 810 && screen.height == 1080) ||
+								(screen.width == 768 && screen.height == 1024))
+						)
+							o.os = "ios";
+						o.mobile = o.os == "android" || o.os == "ios";
+						var _canUse = document.createElement("div");
+						o.canUse = function (property, value) {
+							var style;
+							style = _canUse.style;
+							if (!(property in style)) return false;
+							if (typeof value !== "undefined") {
+								style[property] = value;
+								if (style[property] == "") return false;
+							}
+							return true;
+						};
+						o.flags.lsdUnits = o.canUse("width", "100dvw");
+						return o;
+					})(),
+					trigger = function (t) {
+						dispatchEvent(new Event(t));
+					},
+					cssRules = function (selectorText) {
+						var ss = document.styleSheets,
+							a = [],
+							f = function (s) {
+								var r = s.cssRules,
+									i;
+								for (i = 0; i < r.length; i++) {
+									if (
+										r[i] instanceof CSSMediaRule &&
+										matchMedia(r[i].conditionText).matches
+									)
+										f(r[i]);
+									else if (
+										r[i] instanceof CSSStyleRule &&
+										r[i].selectorText == selectorText
+									)
+										a.push(r[i]);
+								}
+							},
+							x,
+							i;
+						for (i = 0; i < ss.length; i++) f(ss[i]);
+						return a;
+					},
+					thisHash = function () {
+						var h = location.hash ? location.hash.substring(1) : null,
+							a;
+						if (!h) return null;
+						if (h.match(/\?/)) {
+							a = h.split("?");
+							h = a[0];
+							history.replaceState(undefined, undefined, "#" + h);
+							window.location.search = a[1];
+						}
+						if (h.length > 0 && !h.match(/^[a-zA-Z]/)) h = "x" + h;
+						if (typeof h == "string") h = h.toLowerCase();
+						return h;
+					},
+					scrollToElement = function (e, style, duration) {
+						var y, cy, dy, start, easing, offset, f;
+						if (!e) y = 0;
+						else {
+							offset =
+								(e.dataset.scrollOffset
+									? parseInt(e.dataset.scrollOffset)
+									: 0) *
+								parseFloat(getComputedStyle(document.documentElement).fontSize);
+							switch (
+								e.dataset.scrollBehavior ? e.dataset.scrollBehavior : "default"
+							) {
+								case "default":
+								default:
+									y = e.offsetTop + offset;
+									break;
+								case "center":
+									if (e.offsetHeight < window.innerHeight)
+										y =
+											e.offsetTop -
+											(window.innerHeight - e.offsetHeight) / 2 +
+											offset;
+									else y = e.offsetTop - offset;
+									break;
+								case "previous":
+									if (e.previousElementSibling)
+										y =
+											e.previousElementSibling.offsetTop +
+											e.previousElementSibling.offsetHeight +
+											offset;
+									else y = e.offsetTop + offset;
+									break;
+							}
+						}
+						if (!style) style = "smooth";
+						if (!duration) duration = 750;
+						if (style == "instant") {
+							window.scrollTo(0, y);
+							return;
+						}
+						start = Date.now();
+						cy = window.scrollY;
+						dy = y - cy;
+						switch (style) {
+							case "linear":
+								easing = function (t) {
+									return t;
+								};
+								break;
+							case "smooth":
+								easing = function (t) {
+									return t < 0.5
+										? 4 * t * t * t
+										: (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+								};
+								break;
+						}
+						f = function () {
+							var t = Date.now() - start;
+							if (t >= duration) window.scroll(0, y);
+							else {
+								window.scroll(0, cy + dy * easing(t / duration));
+								requestAnimationFrame(f);
+							}
+						};
+						f();
+					},
+					scrollToTop = function () {
+						scrollToElement(null);
+					},
+					loadElements = function (parent) {
+						var a, e, x, i;
+						a = parent.querySelectorAll('iframe[data-src]:not([data-src=""])');
+						for (i = 0; i < a.length; i++) {
+							a[i].contentWindow.location.replace(a[i].dataset.src);
+							a[i].dataset.initialSrc = a[i].dataset.src;
+							a[i].dataset.src = "";
+						}
+						a = parent.querySelectorAll("video[autoplay]");
+						for (i = 0; i < a.length; i++) {
+							if (a[i].paused) a[i].play();
+						}
+						e = parent.querySelector('[data-autofocus="1"]');
+						x = e ? e.tagName : null;
+						switch (x) {
+							case "FORM":
+								e = e.querySelector(
+									".field input, .field select, .field textarea"
+								);
+								if (e) e.focus();
+								break;
+							default:
+								break;
+						}
+					},
+					unloadElements = function (parent) {
+						var a, e, x, i;
+						a = parent.querySelectorAll('iframe[data-src=""]');
+						for (i = 0; i < a.length; i++) {
+							if (a[i].dataset.srcUnload === "0") continue;
+							if ("initialSrc" in a[i].dataset)
+								a[i].dataset.src = a[i].dataset.initialSrc;
+							else a[i].dataset.src = a[i].src;
+							a[i].contentWindow.location.replace("about:blank");
+						}
+						a = parent.querySelectorAll("video");
+						for (i = 0; i < a.length; i++) {
+							if (!a[i].paused) a[i].pause();
+						}
+						e = $(":focus");
+						if (e) e.blur();
+					};
+				window._scrollToTop = scrollToTop;
+				var thisUrl = function () {
+					return window.location.href
+						.replace(window.location.search, "")
+						.replace(/#$/, "");
+				};
+				var getVar = function (name) {
+					var a = window.location.search.substring(1).split("&"),
+						b,
+						k;
+					for (k in a) {
+						b = a[k].split("=");
+						if (b[0] == name) return b[1];
+					}
+					return null;
+				};
+				var errors = {
+					handle: function (handler) {
+						window.onerror = function (message, url, line, column, error) {
+							handler(error.message);
+							return true;
+						};
+					},
+					unhandle: function () {
+						window.onerror = null;
+					},
+				};
+				var loadHandler = function () {
+					setTimeout(function () {
+						$body.classList.remove("is-loading");
+						$body.classList.add("is-playing");
+						setTimeout(function () {
+							$body.classList.remove("is-playing");
+							$body.classList.add("is-ready");
+						}, 1000);
+					}, 100);
+				};
+				on("load", loadHandler);
+				loadElements(document.body);
+				var style, sheet, rule;
+				style = document.createElement("style");
+				style.appendChild(document.createTextNode(""));
+				document.head.appendChild(style);
+				sheet = style.sheet;
+				if (client.mobile) {
+					(function () {
+						if (client.flags.lsdUnits) {
+							document.documentElement.style.setProperty(
+								"--viewport-height",
+								"100svh"
+							);
+							document.documentElement.style.setProperty(
+								"--background-height",
+								"100lvh"
+							);
+						} else {
+							var f = function () {
+								document.documentElement.style.setProperty(
+									"--viewport-height",
+									window.innerHeight + "px"
+								);
+								document.documentElement.style.setProperty(
+									"--background-height",
+									window.innerHeight + 250 + "px"
+								);
+							};
+							on("load", f);
+							on("orientationchange", function () {
+								setTimeout(function () {
+									f();
+								}, 100);
+							});
+						}
+					})();
+				}
+				if (client.os == "android") {
+					(function () {
+						sheet.insertRule("body::after { }", 0);
+						rule = sheet.cssRules[0];
+						var f = function () {
+							rule.style.cssText =
+								"height: " + Math.max(screen.width, screen.height) + "px";
+						};
+						on("load", f);
+						on("orientationchange", f);
+						on("touchmove", f);
+					})();
+					$body.classList.add("is-touch");
+				} else if (client.os == "ios") {
+					if (client.osVersion <= 11)
+						(function () {
+							sheet.insertRule("body::after { }", 0);
+							rule = sheet.cssRules[0];
+							rule.style.cssText = "-webkit-transform: scale(1.0)";
+						})();
+					if (client.osVersion <= 11)
+						(function () {
+							sheet.insertRule("body.ios-focus-fix::before { }", 0);
+							rule = sheet.cssRules[0];
+							rule.style.cssText = "height: calc(100% + 60px)";
+							on(
+								"focus",
+								function (event) {
+									$body.classList.add("ios-focus-fix");
+								},
+								true
+							);
+							on(
+								"blur",
+								function (event) {
+									$body.classList.remove("ios-focus-fix");
+								},
+								true
+							);
+						})();
+					$body.classList.add("is-touch");
+				}
+				var scrollEvents = {
+					items: [],
+					add: function (o) {
+						this.items.push({
+							element: o.element,
+							triggerElement:
+								"triggerElement" in o && o.triggerElement
+									? o.triggerElement
+									: o.element,
+							enter: "enter" in o ? o.enter : null,
+							leave: "leave" in o ? o.leave : null,
+							mode: "mode" in o ? o.mode : 3,
+							offset: "offset" in o ? o.offset : 0,
+							initialState: "initialState" in o ? o.initialState : null,
+							state: false,
+						});
+					},
+					handler: function () {
+						var height, top, bottom, scrollPad;
+						if (client.os == "ios") {
+							height = document.documentElement.clientHeight;
+							top = document.body.scrollTop + window.scrollY;
+							bottom = top + height;
+							scrollPad = 125;
+						} else {
+							height = document.documentElement.clientHeight;
+							top = document.documentElement.scrollTop;
+							bottom = top + height;
+							scrollPad = 0;
+						}
+						scrollEvents.items.forEach(function (item) {
+							var bcr, elementTop, elementBottom, state, a, b;
+							if (!item.enter && !item.leave) return true;
+							if (!item.triggerElement) return true;
+							if (item.triggerElement.offsetParent === null) {
+								if (item.state == true && item.leave) {
+									item.state = false;
+									item.leave.apply(item.element);
+									if (!item.enter) item.leave = null;
+								}
+								return true;
+							}
+							bcr = item.triggerElement.getBoundingClientRect();
+							elementTop = top + Math.floor(bcr.top);
+							elementBottom = elementTop + bcr.height;
+							if (item.initialState !== null) {
+								state = item.initialState;
+								item.initialState = null;
+							} else {
+								switch (item.mode) {
+									case 1:
+									default:
+										state =
+											bottom > elementTop - item.offset &&
+											top < elementBottom + item.offset;
+										break;
+									case 2:
+										a = top + height * 0.5;
+										state =
+											a > elementTop - item.offset &&
+											a < elementBottom + item.offset;
+										break;
+									case 3:
+										a = top + height * 0.25;
+										if (a - height * 0.375 <= 0) a = 0;
+										b = top + height * 0.75;
+										if (
+											b + height * 0.375 >=
+											document.body.scrollHeight - scrollPad
+										)
+											b = document.body.scrollHeight + scrollPad;
+										state =
+											b > elementTop - item.offset &&
+											a < elementBottom + item.offset;
+										break;
+								}
+							}
+							if (state != item.state) {
+								item.state = state;
+								if (item.state) {
+									if (item.enter) {
+										item.enter.apply(item.element);
+										if (!item.leave) item.enter = null;
+									}
+								} else {
+									if (item.leave) {
+										item.leave.apply(item.element);
+										if (!item.enter) item.leave = null;
+									}
+								}
+							}
+						});
+					},
+					init: function () {
+						on("load", this.handler);
+						on("resize", this.handler);
+						on("scroll", this.handler);
+						this.handler();
+					},
+				};
+				scrollEvents.init();
+				var onvisible = {
+					effects: {
+						"blur-in": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"filter " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity) {
+								this.style.opacity = 0;
+								this.style.filter = "blur(" + 0.25 * intensity + "rem)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.filter = "none";
+							},
+						},
+						"zoom-in": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transform =
+									"scale(" + (1 - (alt ? 0.25 : 0.05) * intensity) + ")";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"zoom-out": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transform =
+									"scale(" + (1 + (alt ? 0.25 : 0.05) * intensity) + ")";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"slide-left": {
+							transition: function (speed, delay) {
+								return (
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function () {
+								this.style.transform = "translateX(100vw)";
+							},
+							play: function () {
+								this.style.transform = "none";
+							},
+						},
+						"slide-right": {
+							transition: function (speed, delay) {
+								return (
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function () {
+								this.style.transform = "translateX(-100vw)";
+							},
+							play: function () {
+								this.style.transform = "none";
+							},
+						},
+						"flip-forward": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transformOrigin = "50% 50%";
+								this.style.transform =
+									"perspective(1000px) rotateX(" +
+									(alt ? 45 : 15) * intensity +
+									"deg)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"flip-backward": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transformOrigin = "50% 50%";
+								this.style.transform =
+									"perspective(1000px) rotateX(" +
+									(alt ? -45 : -15) * intensity +
+									"deg)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"flip-left": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transformOrigin = "50% 50%";
+								this.style.transform =
+									"perspective(1000px) rotateY(" +
+									(alt ? 45 : 15) * intensity +
+									"deg)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"flip-right": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transformOrigin = "50% 50%";
+								this.style.transform =
+									"perspective(1000px) rotateY(" +
+									(alt ? -45 : -15) * intensity +
+									"deg)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"tilt-left": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transform =
+									"rotate(" + (alt ? 45 : 5) * intensity + "deg)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"tilt-right": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity, alt) {
+								this.style.opacity = 0;
+								this.style.transform =
+									"rotate(" + (alt ? -45 : -5) * intensity + "deg)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"fade-right": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity) {
+								this.style.opacity = 0;
+								this.style.transform =
+									"translateX(" + -1.5 * intensity + "rem)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"fade-left": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity) {
+								this.style.opacity = 0;
+								this.style.transform = "translateX(" + 1.5 * intensity + "rem)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"fade-down": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity) {
+								this.style.opacity = 0;
+								this.style.transform =
+									"translateY(" + -1.5 * intensity + "rem)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"fade-up": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity) {
+								this.style.opacity = 0;
+								this.style.transform = "translateY(" + 1.5 * intensity + "rem)";
+							},
+							play: function () {
+								this.style.opacity = 1;
+								this.style.transform = "none";
+							},
+						},
+						"fade-in": {
+							transition: function (speed, delay) {
+								return (
+									"opacity " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function () {
+								this.style.opacity = 0;
+							},
+							play: function () {
+								this.style.opacity = 1;
+							},
+						},
+						"fade-in-background": {
+							custom: true,
+							transition: function (speed, delay) {
+								this.style.setProperty("--onvisible-speed", speed + "s");
+								if (delay)
+									this.style.setProperty("--onvisible-delay", delay + "s");
+							},
+							rewind: function () {
+								this.style.removeProperty("--onvisible-background-color");
+							},
+							play: function () {
+								this.style.setProperty(
+									"--onvisible-background-color",
+									"rgba(0,0,0,0.001)"
+								);
+							},
+						},
+						"zoom-in-image": {
+							target: "img",
+							transition: function (speed, delay) {
+								return (
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function () {
+								this.style.transform = "scale(1)";
+							},
+							play: function (intensity) {
+								this.style.transform = "scale(" + (1 + 0.1 * intensity) + ")";
+							},
+						},
+						"zoom-out-image": {
+							target: "img",
+							transition: function (speed, delay) {
+								return (
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity) {
+								this.style.transform = "scale(" + (1 + 0.1 * intensity) + ")";
+							},
+							play: function () {
+								this.style.transform = "none";
+							},
+						},
+						"focus-image": {
+							target: "img",
+							transition: function (speed, delay) {
+								return (
+									"transform " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "") +
+									", " +
+									"filter " +
+									speed +
+									"s ease" +
+									(delay ? " " + delay + "s" : "")
+								);
+							},
+							rewind: function (intensity) {
+								this.style.transform = "scale(" + (1 + 0.05 * intensity) + ")";
+								this.style.filter = "blur(" + 0.25 * intensity + "rem)";
+							},
+							play: function (intensity) {
+								this.style.transform = "none";
+								this.style.filter = "none";
+							},
+						},
+					},
+					regex: new RegExp(
+						"([a-zA-Z0-9\.\,\-\_\"'\?\!\:\;\#\@\#$\%\&\(\)\{\}]+)",
+						"g"
+					),
+					add: function (selector, settings) {
+						var _this = this,
+							style = settings.style in this.effects ? settings.style : "fade",
+							speed =
+								parseInt("speed" in settings ? settings.speed : 1000) / 1000,
+							intensity =
+								(parseInt("intensity" in settings ? settings.intensity : 5) /
+									10) *
+									1.75 +
+								0.25,
+							delay = parseInt("delay" in settings ? settings.delay : 0) / 1000,
+							replay = "replay" in settings ? settings.replay : false,
+							stagger =
+								"stagger" in settings
+									? parseInt(settings.stagger) >= 0
+										? parseInt(settings.stagger) / 1000
+										: false
+									: false,
+							staggerOrder =
+								"staggerOrder" in settings ? settings.staggerOrder : "default",
+							staggerSelector =
+								"staggerSelector" in settings ? settings.staggerSelector : null,
+							state = "state" in settings ? settings.state : null,
+							effect = this.effects[style];
+						if ("CARRD_DISABLE_ANIMATION" in window) {
+							if (style == "fade-in-background")
+								$$(selector).forEach(function (e) {
+									e.style.setProperty(
+										"--onvisible-background-color",
+										"rgba(0,0,0,0.001)"
+									);
+								});
+							return;
+						}
+						$$(selector).forEach(function (e) {
+							var children, enter, leave, targetElement, triggerElement;
+							if (stagger !== false && staggerSelector == ":scope > *")
+								_this.expandTextNodes(e);
+							children =
+								stagger !== false && staggerSelector
+									? e.querySelectorAll(staggerSelector)
+									: null;
+							enter = function (staggerDelay = 0) {
+								var _this = this,
+									transitionOrig;
+								if (effect.target) _this = this.querySelector(effect.target);
+								if (!effect.custom) {
+									transitionOrig = _this.style.transition;
+									_this.style.setProperty("backface-visibility", "hidden");
+									_this.style.transition = effect.transition(
+										speed,
+										delay + staggerDelay
+									);
+								} else
+									effect.transition.apply(_this, [speed, delay + staggerDelay]);
+								effect.play.apply(_this, [intensity, !!children]);
+								if (!effect.custom)
+									setTimeout(function () {
+										_this.style.removeProperty("backface-visibility");
+										_this.style.transition = transitionOrig;
+									}, (speed + delay + staggerDelay) * 1000 * 2);
+							};
+							leave = function () {
+								var _this = this,
+									transitionOrig;
+								if (effect.target) _this = this.querySelector(effect.target);
+								if (!effect.custom) {
+									transitionOrig = _this.style.transition;
+									_this.style.setProperty("backface-visibility", "hidden");
+									_this.style.transition = effect.transition(speed);
+								} else effect.transition.apply(_this, [speed]);
+								effect.rewind.apply(_this, [intensity, !!children]);
+								if (!effect.custom)
+									setTimeout(function () {
+										_this.style.removeProperty("backface-visibility");
+										_this.style.transition = transitionOrig;
+									}, speed * 1000 * 2);
+							};
+							if (effect.target) targetElement = e.querySelector(effect.target);
+							else targetElement = e;
+							if (children)
+								children.forEach(function (targetElement) {
+									effect.rewind.apply(targetElement, [intensity, true]);
+								});
+							else effect.rewind.apply(targetElement, [intensity]);
+							triggerElement = e;
+							if (e.parentNode) {
+								if (e.parentNode.dataset.onvisibleTrigger)
+									triggerElement = e.parentNode;
+								else if (e.parentNode.parentNode) {
+									if (e.parentNode.parentNode.dataset.onvisibleTrigger)
+										triggerElement = e.parentNode.parentNode;
+								}
+							}
+							scrollEvents.add({
+								element: e,
+								triggerElement: triggerElement,
+								initialState: state,
+								enter: children
+									? function () {
+											var staggerDelay = 0,
+												childHandler = function (e) {
+													enter.apply(e, [staggerDelay]);
+													staggerDelay += stagger;
+												},
+												a;
+											if (staggerOrder == "default") {
+												children.forEach(childHandler);
+											} else {
+												a = Array.from(children);
+												switch (staggerOrder) {
+													case "reverse":
+														a.reverse();
+														break;
+													case "random":
+														a.sort(function () {
+															return Math.random() - 0.5;
+														});
+														break;
+												}
+												a.forEach(childHandler);
+											}
+									  }
+									: enter,
+								leave: replay
+									? children
+										? function () {
+												children.forEach(function (e) {
+													leave.apply(e);
+												});
+										  }
+										: leave
+									: null,
+							});
+						});
+					},
+					expandTextNodes: function (e) {
+						var s, i, w, x;
+						for (i = 0; i < e.childNodes.length; i++) {
+							x = e.childNodes[i];
+							if (x.nodeType != Node.TEXT_NODE) continue;
+							s = x.nodeValue;
+							s = s.replace(this.regex, function (x, a) {
+								return "<text-node>" + a + "</text-node>";
+							});
+							w = document.createElement("text-node");
+							w.innerHTML = s;
+							x.replaceWith(w);
+							while (w.childNodes.length > 0) {
+								w.parentNode.insertBefore(w.childNodes[0], w);
+							}
+							w.parentNode.removeChild(w);
+						}
+					},
+				};
+				onvisible.add("#image01", {
+					style: "tilt-right",
+					speed: 1500,
+					intensity: 8,
+					delay: 0,
+					replay: false,
+				});
+				onvisible.add("#text02", {
+					style: "fade-right",
+					speed: 1000,
+					intensity: 5,
+					delay: 0,
+					replay: false,
+				});
+				onvisible.add("#text01", {
+					style: "fade-right",
+					speed: 1000,
+					intensity: 5,
+					delay: 125,
+					replay: false,
+				});
+				onvisible.add("#buttons01", {
+					style: "fade-up",
+					speed: 1000,
+					intensity: 3,
+					delay: 125,
+					stagger: 125,
+					staggerSelector: ":scope > li",
+					replay: false,
+				});
+			})();
+		</script>
+		<script
+			id="help-ukraine-win"
+			async="true"
+			src="https://helpukrainewinwidget.org/cdn/widget.js"
+			data-type="one"
+			data-position="bottom-right"
+		></script>
+	</body>
 </html>
