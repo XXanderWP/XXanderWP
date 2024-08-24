@@ -3,7 +3,12 @@
 🤝 Main developer | Co-Owner
 
 ### <img src="https://rocketman-streams.com/LogoWhite.svg" width="20px" /> [RocketMan](https://rocketman-streams.com/)
-🤝 Main developer | Co-Owner<br>
+🤝 Main developer | Co-Owner
+
+### <img src="https://raw.githubusercontent.com/XXanderWP/AppsVolumeControl/main/logo.png" width="20px" /> [Apps Volume Control](https://github.com/XXanderWP/AppsVolumeControl)
+🤝 Main developer
+
+<br>
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/gbwDMUJ2H8)
