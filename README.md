@@ -8,6 +8,10 @@
 ### <img src="https://raw.githubusercontent.com/XXanderWP/AppsVolumeControl/main/logo.png" width="20px" /> [Apps Volume Control](https://github.com/XXanderWP/AppsVolumeControl)
 🤝 Main developer
 
+### <img src="https://rocketman-vpn.com/logo.png" width="20px" /> [RocketMan VPN](https://t.me/rocketman_vpn_bot?start=ref_395244822)
+🤝 Main developer | Co-Owner
+
+
 <br>
 
 ## 🌐 Socials:
