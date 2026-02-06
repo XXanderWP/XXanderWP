@@ -11,7 +11,7 @@
     <meta property="og:title" content="XanderWP - Developer">
     <meta property="og:description" content="Developer webpage with social links">
     <meta property="og:url" content="https://xanderwp.site">
-    <link rel="shortcut icon" id="favicon" type="image/x-icon" href="https://i.imgur.com/laVNfra.png">
+    <link rel="shortcut icon" id="favicon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/36613267?v=4">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -760,7 +760,7 @@
             <!-- Avatar -->
             <div class="avatar-container" id="avatar-container">
                 <div class="avatar-ring"></div>
-                <img src="https://avatars.githubusercontent.com/u/36613267?v=4" alt="XanderWP Avatar" id="avatar" class="avatar">
+                <img src="https://avatars.githubusercontent.com/u/36613267?v=4" alt="Avatar" id="avatar" class="avatar">
             </div>
 
             <!-- Profile Info -->
@@ -954,6 +954,8 @@
 
     <!-- Custom JS -->
     <script>
+        let avatarURL = "https://avatars.githubusercontent.com/u/36613267?v=4"
+        let login = "XXanderWP"
         // Translations
         const translations = {
             en: {
@@ -1040,14 +1042,13 @@
         }
 
         async function fetchGithubUser() {
-            const CACHE_KEY = 'github_user_XXanderWP';
+            const CACHE_KEY = 'github_user_'+login;
             
-            let avatarURL = "https://avatars.githubusercontent.com/u/36613267?v=4"
-            let login = "XXanderWP"
+            
             try {
                 let user = getCache(CACHE_KEY);
                 if (!user) {
-                    const response = await fetch('https://api.github.com/users/XXanderWP');
+                    const response = await fetch('https://api.github.com/users/'+login);
                     user = await response.json();
                     if(typeof user === 'object' && user.message){
                         console.error('GitHub API error:', user.message);
@@ -1080,7 +1081,7 @@
 
                 if (!repos) {
                     const response = await fetch(
-                        'https://api.github.com/users/XXanderWP/repos?sort=pushed&per_page=6'
+                        `https://api.github.com/users/${login}/repos?sort=pushed&per_page=6`
                     );
                     repos = await response.json();
                     if(typeof repos === 'object' && repos.message){
